@@ -1,0 +1,529 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --background--color: #2c016d;
+  --text-color: white;
+}
+
+body {
+  margin: 0px;
+  font-family: poppins;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+}
+/* home */
+.main-body-container {
+  font-display: flex;
+  margin-top: 25%;
+  margin-bottom: 25%;
+  /* width: 1440x; */
+
+}
+
+.main-body-container img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #AC73FF;
+  border-radius: 12px;
+}
+
+header {
+  background-color: var(--background--color);
+  padding: 60px;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar {
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-list{
+  display: flex;
+  justify-content: center;
+  /* margin-left: 15%; */
+}
+
+.fa-solid.fa-cart-shopping {
+  color: rgb(243, 238, 238);
+  font-size: 40px;
+  margin-right: 900px;
+  text-decoration: none;
+}
+
+.banner img {
+  margin: 0%;
+  width: 100%;
+}
+.navbar-list li a {
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navbar li {
+  display: inline;
+  /* justify-content: space-between; */
+}
+
+a {
+  color: var(--text-color);
+}
+
+.container-div nav ul {
+  list-style: none;
+}
+
+.container {
+  /* display: flex; */
+  flex-wrap: nowrap;
+  border: solid black;
+  margin: 20px;
+  width: 285px;
+  border-radius: 25px;
+  background-color: rgb(238, 228, 239) ;
+  background-size: 15%;
+  padding: 20px;
+  font-size: 24px;
+  margin-bottom: 15px;;
+  justify-content: center;
+}
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+}
+
+
+.reviewers{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    background-color: aquamarine;
+    justify-content: center;
+    margin-top: 300px;
+
+}
+
+.reviews{
+    border: solid black;
+    height: 300px;
+    width: 450px;
+    margin: 50px;
+    background-color: aliceblue;
+    text-align: center;
+
+}
+.reviewers h2{
+  margin-right: 80%;
+  text-align: center;
+  margin-left: 80%;
+}
+.reviewers img{
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+/* .items img{
+    width:100%
+} */
+.contact {
+  width: 500px;
+  background-color: azure;
+  box-shadow: 0 0 20px 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50, -50);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin: 35px;
+}
+
+.input-field {
+  width: 400px;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+  border: 1px solid #777;
+  border-radius: 14px;
+  outline: none;
+  padding-top: 10px;
+}
+
+.textarea-field {
+  height: 150px;
+  padding-top: 10px;
+}
+
+.btn {
+  border-radius: 20px;
+  color: azure;
+  margin-top: 18px;
+  padding: 10px;
+  background-color: antiquewhite;
+}
+
+.cart {
+  background-color: #51d6ca;
+  padding: 150px;
+  margin: 200px 500px 200px 500px;
+}
+/* 
+--shop-- */
+.cart img {
+  width: 50%;
+}
+
+/* --about us-- */
+
+.team{
+    width: 800px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 200px;
+    /* border: solid salmon 5px; */
+    margin-top: 100px;
+}
+
+.team img{
+   width: 800px;
+   height: 400px;
+   align-items: center;
+   object-fit: cover;
+}
+
+
+.about img{
+  width: 800px;
+   height: 400px;
+   align-items: center;
+   object-fit: cover;
+ }
+
+.about{
+    /* border: solid salmon 5px; */
+    width: 800px;
+    margin: auto;
+    margin-bottom: 15%;
+    object-fit: cover;
+}
+
+footer {
+  background-color: var(--background--color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.icons i {
+  font-size: 32px;
+}
+
+.sub-heading{
+  text-align: center;
+  margin-right: 220px;
+  /* margin-top: 15px; */
+
+}
+
+.subscription-box {
+  display: flex;
+  align-items: center;
+  
+}
+
+.subscription-form {
+  display: flex;
+  width: 420px;
+}
+
+.subscription-form input[type="email"] {
+  width: 200px;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+}
+
+.subscription-form button {
+  width: 155px;
+  background-color: #AC73FF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 20px; */
+}
+
+/* cart */
+.product-section{
+  border-color: 5px solid black;
+  height: 900px;
+  background-color: #51d6ca;
+
+}
+
+.similar-items{
+  /* margin-top: 1000px; */
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  justify-content: center;
+  padding: 20px;
+  border: solid black 5px;
+  margin-top: 70%;
+}
+
+.similar-items img{
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+};
+
+.similar-title{
+  display: flex;
+  justify-content: center;
+}
+
+
+.contact-section {
+  max-width: 600px;
+  margin: 10px;
+  margin-left: 500px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 2rem;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #51d6ca;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e0559e;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #51d6ca;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #e0559e;
+}
+
+/* Default styles: (what you already wrote) */
+
+/* Now let's add responsive breakpoints */
+@media (max-width: 768px) {
+  /* Tablets and small screens */
+
+  .team, .about, .contact-section {
+    width: 90%;
+  }
+
+  header {
+    padding: 30px;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fa-solid.fa-cart-shopping {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .subscription-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .subscription-form input[type="email"], 
+  .subscription-form button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .reviewers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews {
+    width: 90%;
+  }
+
+  .similar-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  /* Phones */
+
+  header {
+    padding: 20px;
+  }
+
+  .navbar-list li a {
+    font-size: 16px;
+  }
+
+  .team img, .about img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact {
+    width: 90%;
+    left: 5%;
+    transform: translate(0, -50%);
+  }
+
+  .contact-section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cart {
+    margin: 50px auto;
+    padding: 50px;
+  }
+}
