@@ -188,13 +188,13 @@ a {
   width: 500px;
   background-color: azure;
   box-shadow: 0 0 20px 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50, -50);
-  position: absolute;
+  margin: 100px auto; /* centers it vertically with spacing */
   display: flex;
   justify-content: center;
+  padding: 2rem;
+  border-radius: 10px;
 }
+
 
 form {
   margin: 35px;

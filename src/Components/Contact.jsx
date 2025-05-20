@@ -3,9 +3,9 @@ function Contact() {
     <main>
       <div className="contact">
         <form>
-          <input type="text" class="input-field" placeholder="name" />
-          <input type="email" class="input-field" placeholder="email" />
-          <input type="text" class="input-field" placeholder="subject" />
+          <input type="text" className="input-field" placeholder="name" />
+          <input type="email" className="input-field" placeholder="email" />
+          <input type="text" className="input-field" placeholder="subject" />
           <textarea
             type="text"
             className="input-field textarea-field"

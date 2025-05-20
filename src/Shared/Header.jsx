@@ -1,13 +1,13 @@
-
+import {Link} from "react-router-dom"
 function Header() {
   return (
     <header>
-      <a href="index.html">
+      <Link to="index.html">
         <img src="" alt="" />
-      </a>
+      </Link>
       <nav className="navbar">
         <ul className="navbar-list">
-          <a href="./cart.html" className="fa-solid fa-cart-shopping"></a>
+          <Link to="./cart.html" className="fa-solid fa-cart-shopping"></Link>
           <li>
             <Link to="./Index">Home</Link>
           </li>
@@ -18,7 +18,7 @@ function Header() {
             <Link to="./About">About Us</Link>
           </li>
           <li>
-            <Link to="./Shop">Contact Us</Link>
+            <Link to="./Contact">Contact Us</Link>
           </li>
         </ul>
       </nav>
