@@ -3,7 +3,7 @@
 function About() {
   return (
     <main>
-      <div className="team">
+      <section className="team">
         <h2>Our Story</h2>
         <img
           src="./public/images/form-submission-7464-teamworkisimportantintheworkplace-desktop-768x432-1606698141-85.jpg"
@@ -15,15 +15,15 @@ function About() {
           perspiciatis unde omnis iste natus error sit voluptatem accusantium
           doloremque laudantium, totam rem aperiam. ed ut perspiciatis unde
           omnis iste natus error sit voluptatem accusantium doloremque
-          laudantium, totam rem aperiam. ed ut perspiciatis unde omnis iste
+          laudaçntium, totam rem aperiam. ed ut perspiciatis unde omnis iste
           natus error sit voluptatem accusantium doloremque laudantium, totam
           rem aperiam. ed ut perspiciatis unde omnis iste natus error sit
           voluptatem accusantium doloremque laudantium, totam rem aperiam. ed ut
           perspiciatis unde omnis iste natus error sit voluptatem accusantium
           doloremque laudantium, totam rem aperiam.
         </p>
-      </div>
-      <div className="about">
+      </section>
+      <section className="about">
         <h2>Our Founder</h2>
         <img
           src="./public/images/Screenshot 2024-07-28 at 3.12.21 PM.png"
@@ -42,7 +42,7 @@ function About() {
           perspiciatis unde omnis iste natus error sit voluptatem accusantium
           doloremque laudantium, totam rem aperiam.
         </p>
-      </div>
+      </section>
     </main>
   );
 }

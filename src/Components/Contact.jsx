@@ -1,21 +1,16 @@
 function Contact() {
   return (
     <main>
-      <div className="contact">
-        <form>
-          <input type="text" className="input-field" placeholder="name" />
-          <input type="email" className="input-field" placeholder="email" />
-          <input type="text" className="input-field" placeholder="subject" />
-          <textarea
-            type="text"
-            className="input-field textarea-field"
-            placeholder=" Your message"
-          ></textarea>
-          <button type="button" className="btn">
-            Your Message
-          </button>
-        </form>
-      </div>
+      <section class="contact-section">
+          <h2>Contact Us</h2>
+          <form className="contact-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
     </main>
   );
 }

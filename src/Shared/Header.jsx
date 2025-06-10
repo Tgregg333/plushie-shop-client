@@ -1,4 +1,6 @@
 import {Link} from "react-router-dom"
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 function Header() {
   return (
     <header>
@@ -7,7 +9,6 @@ function Header() {
       </Link>
       <nav className="navbar">
         <ul className="navbar-list">
-          <Link to="./cart.html" className="fa-solid fa-cart-shopping"></Link>
           <li>
             <Link to="./Index">Home</Link>
           </li>
@@ -21,6 +22,15 @@ function Header() {
             <Link to="./Contact">Contact Us</Link>
           </li>
         </ul>
+
+        <section className="icon-links">
+          <Link to="/cart">
+            <i className="fa-solid fa-cart-shopping"></i>
+          </Link>
+          <Link to="/Login">
+            <i className="fa-solid fa-right-to-bracket"></i>
+          </Link>
+        </section>
       </nav>
     </header>
   );

@@ -64,14 +64,13 @@ h1 {
   margin-top: 25%;
   margin-bottom: 25%;
   /* width: 1440x; */
-
 }
 
 .main-body-container img {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #AC73FF;
+  background-color: #ac73ff;
   border-radius: 12px;
 }
 
@@ -88,7 +87,7 @@ header {
   justify-content: center;
 }
 
-.navbar-list{
+.navbar-list {
   display: flex;
   justify-content: center;
   /* margin-left: 15%; */
@@ -97,8 +96,40 @@ header {
 .fa-solid.fa-cart-shopping {
   color: rgb(243, 238, 238);
   font-size: 40px;
-  margin-right: 900px;
+  margin-right: 30px;
   text-decoration: none;
+}
+
+.fa-solid.fa-right-to-bracket {
+  color: rgb(243, 238, 238);
+  font-size: 40px;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background--color);
+  padding: 20px 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.icon-links {
+  display: flex;
+  gap: 15px;
+}
+
+.icon-links a i {
+  font-size: 28px;
+  color: rgb(243, 238, 238);
 }
 
 .banner img {
@@ -131,54 +162,51 @@ a {
   margin: 20px;
   width: 285px;
   border-radius: 25px;
-  background-color: rgb(238, 228, 239) ;
+  background-color: rgb(238, 228, 239);
   background-size: 15%;
   padding: 20px;
   font-size: 24px;
-  margin-bottom: 15px;;
+  margin-bottom: 15px;
   justify-content: center;
 }
 
-.items{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 30px;
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
 }
 
-
-.reviewers{
-    display: flex;
-    flex-wrap: wrap;
-    /* margin: auto; */
-    background-color: aquamarine;
-    justify-content: center;
-    margin-top: 300px;
-
+.reviewers {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: auto; */
+  background-color: aquamarine;
+  justify-content: center;
+  margin-top: 300px;
 }
 
-.reviews{
-    border: solid black;
-    height: 300px;
-    width: 450px;
-    margin: 50px;
-    background-color: aliceblue;
-    text-align: center;
-
+.reviews {
+  border: solid black;
+  height: 300px;
+  width: 450px;
+  margin: 50px;
+  background-color: aliceblue;
+  text-align: center;
 }
-.reviewers h2{
+.reviewers h2 {
   margin-right: 80%;
   text-align: center;
   margin-left: 80%;
 }
-.reviewers img{
-    width: 100px;
-    border-radius: 50%;
-    height: 100px;
-    object-fit: cover;
-    margin: auto;
-    display: block;
-    margin-top: 10px;
+.reviewers img {
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+  object-fit: cover;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
 }
 
 /* .items img{
@@ -188,13 +216,13 @@ a {
   width: 500px;
   background-color: azure;
   box-shadow: 0 0 20px 0;
-  margin: 100px auto; /* centers it vertically with spacing */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50, -50);
+  position: absolute;
   display: flex;
   justify-content: center;
-  padding: 2rem;
-  border-radius: 10px;
 }
-
 
 form {
   margin: 35px;
@@ -237,36 +265,35 @@ form {
 
 /* --about us-- */
 
-.team{
-    width: 800px;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 200px;
-    /* border: solid salmon 5px; */
-    margin-top: 100px;
-}
-
-.team img{
-   width: 800px;
-   height: 400px;
-   align-items: center;
-   object-fit: cover;
-}
-
-
-.about img{
+.team {
   width: 800px;
-   height: 400px;
-   align-items: center;
-   object-fit: cover;
- }
+  align-items: center;
+  margin: auto;
+  margin-bottom: 200px;
+  /* border: solid salmon 5px; */
+  margin-top: 100px;
+}
 
-.about{
-    /* border: solid salmon 5px; */
-    width: 800px;
-    margin: auto;
-    margin-bottom: 15%;
-    object-fit: cover;
+.team img {
+  width: 800px;
+  height: 400px;
+  align-items: center;
+  object-fit: cover;
+}
+
+.about img {
+  width: 800px;
+  height: 400px;
+  align-items: center;
+  object-fit: cover;
+}
+
+.about {
+  /* border: solid salmon 5px; */
+  width: 800px;
+  margin: auto;
+  margin-bottom: 15%;
+  object-fit: cover;
 }
 
 footer {
@@ -287,7 +314,6 @@ footer a {
   text-decoration: none;
 }
 
-
 .footer-section {
   display: flex;
   flex-direction: column;
@@ -299,7 +325,6 @@ footer a {
   flex-direction: column;
 }
 
-
 .icons {
   display: flex;
   gap: 15px;
@@ -310,17 +335,15 @@ footer a {
   font-size: 32px;
 }
 
-.sub-heading{
+.sub-heading {
   text-align: center;
   margin-right: 220px;
   /* margin-top: 15px; */
-
 }
 
 .subscription-box {
   display: flex;
   align-items: center;
-  
 }
 
 .subscription-form {
@@ -337,7 +360,7 @@ footer a {
 
 .subscription-form button {
   width: 155px;
-  background-color: #AC73FF;
+  background-color: #ac73ff;
   color: white;
   border: none;
   cursor: pointer;
@@ -351,35 +374,33 @@ footer a {
 }
 
 /* cart */
-.product-section{
+.product-section {
   border-color: 5px solid black;
   height: 900px;
   background-color: #51d6ca;
-
 }
 
-.similar-items{
+.similar-items {
   /* margin-top: 1000px; */
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 25px;
   justify-content: center;
   padding: 20px;
-  border: solid black 5px;
+  /* border: solid black 5px; */
   margin-top: 70%;
 }
 
-.similar-items img{
+.similar-items img {
   height: 200px;
   object-fit: cover;
   border-radius: 12px;
-};
+}
 
-.similar-title{
+.similar-title {
   display: flex;
   justify-content: center;
 }
-
 
 .contact-section {
   max-width: 600px;
@@ -437,13 +458,124 @@ footer a {
   background-color: #e0559e;
 }
 
-/* Default styles: (what you already wrote) */
+.items-list {
+  margin-bottom: 50%;
+  /* background-color: #51d6ca; */
+}
 
-/* Now let's add responsive breakpoints */
+.quantity-controls {
+  position: absolute;
+  top: 524px;
+  left: 840px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-controls button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #000;
+  background-color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.quantity-number {
+  width: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #51d6ca;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0559e;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.product-section {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  background: white;
+}
+
+.main-product-img {
+  position: absolute;
+  top: 336px;
+  left: 180px;
+  width: 530px;
+  height: 473px;
+  object-fit: cover;
+}
+
+.brand-name {
+  position: absolute;
+  top: 380px;
+  left: 840px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.product-title {
+  position: absolute;
+  top: 400px;
+  left: 837px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.price {
+  position: absolute;
+  top: 448px;
+  left: 840px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.description {
+  position: absolute;
+  top: 578px;
+  left: 840px;
+  width: 470px;
+}
+
+.add-to-cart {
+  position: absolute;
+  top: 698px;
+  left: 840px;
+  width: 471px;
+  height: 45px;
+  background: #222;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   /* Tablets and small screens */
 
-  .team, .about, .contact-section {
+  .team,
+  .about,
+  .contact-section {
     width: 90%;
   }
 
@@ -472,7 +604,7 @@ footer a {
     width: 100%;
   }
 
-  .subscription-form input[type="email"], 
+  .subscription-form input[type="email"],
   .subscription-form button {
     width: 100%;
     margin-top: 10px;
@@ -493,8 +625,6 @@ footer a {
   }
 }
 
-
-
 @media (max-width: 480px) {
   /* Phones */
 
@@ -506,7 +636,8 @@ footer a {
     font-size: 16px;
   }
 
-  .team img, .about img {
+  .team img,
+  .about img {
     width: 100%;
     height: auto;
   }
@@ -527,3 +658,6 @@ footer a {
     padding: 50px;
   }
 }
+
+/* 
+LOOK FOR WIDTH IN HEADER TO FUX SPACING */
