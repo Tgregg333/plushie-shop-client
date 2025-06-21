@@ -1,5 +1,3 @@
-
-
 function Index() {
   return (
     <main>
@@ -50,6 +48,6 @@ function Index() {
       </section>
     </main>
   );
-};
+}
 
 export default Index;
