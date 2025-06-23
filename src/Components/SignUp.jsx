@@ -17,7 +17,7 @@ function SignUp() {
           placeholder="Confirm Password"
           required
         />
-        <a href="#" class="btn">
+        <a href="#" className="btn">
           Sign Up
         </a>
       </form>

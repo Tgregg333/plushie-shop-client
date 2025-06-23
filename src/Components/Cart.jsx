@@ -1,24 +1,26 @@
 import { useState } from "react";
 
-function Cart() {
-  const [items, setItems] = useState([
-    {
-      id: 1,
-      name: "Monkey Plushie",
-      price: "$12.00",
-      image:
-        "/images/ai-generated-small-monkey-stuffed-animal-and-its-ears-on-transparent-background-png.webp",
-    },
-    {
-      id: 2,
-      name: "Tiger Plushie",
-      price: "$14.00",
-      image:
-        "/images/plush-lion-toy-sitting-on-a-transparent-background-png.webp",
-    },
-  ]);
+const initialCart = [
+  {
+    id: 1,
+    name: "Monkey Plushie",
+    price: "$12.00",
+    image:
+      "/images/ai-generated-small-monkey-stuffed-animal-and-its-ears-on-transparent-background-png.webp",
+  },
+  {
+    id: 2,
+    name: "Tiger Plushie",
+    price: "$14.00",
+    image:
+      "/images/plush-lion-toy-sitting-on-a-transparent-background-png.webp",
+  },
+];
 
-  const [newItem, setNewItem] = useState({ name: "", price: "", image: "" });
+function Cart() {
+  const [items, setItems] = useState(initialCart);
+
+  const [newItem, setNewItem] = useState({});
   const [editId, setEditId] = useState(null);
 
   const handleAdd = () => {
@@ -30,11 +32,11 @@ function Cart() {
     };
 
     setItems([...items, newPlushie]);
-    setNewItem({ name: "", price: "", image: "" });
+    setNewItem({});
   };
 
   const handleDelete = (id) => {
-    setItems(items.filter((item) => item.id !== id));
+    setItems((prevItems) => prevItems.filter((item) => item.id !== id));
   };
 
   const handleEdit = (item) => {
@@ -48,9 +50,7 @@ function Cart() {
 
   const handleSave = () => {
     setItems(
-      items.map((item) =>
-        item.id === editId ? { ...item, ...newItem } : item
-      )
+      items.map((item) => (item.id === editId ? { ...item, ...newItem } : item))
     );
     setEditId(null);
     setNewItem({ name: "", price: "", image: "" });
@@ -81,7 +81,7 @@ function Cart() {
 
         <button className="add-to-cart">Add to Cart</button>
 
-        <h2>Related Items</h2>
+        {/* <h2>Related Items</h2>
         <section className="similar-items">
           <img
             src="/images/plush-lion-toy-sitting-on-a-transparent-background-png.webp"
@@ -95,7 +95,7 @@ function Cart() {
             src="/images/plush-lion-toy-sitting-on-a-transparent-background-png.webp"
             alt="Similar item 3"
           />
-        </section>
+        </section> */}
       </section>
 
       <section className="main-body-container">
